@@ -171,18 +171,30 @@ body {
  .equal:active{
   background: #ffca88;
  }
- @media only screen and (min-width : 320px) and (max-width : 475px) {
+ @media only screen and (min-width : 320px) and (max-width : 1024px) {
   .cal {
-      width: 15rem;
+      width: 19rem;
       top: 50px;
   }
   span.equal {
     width: 100px;
   }
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ecf0f2;
+  }
   .body {
-      width: 320px;
-      height: 650px;
-      margin: 0px;
+    width: 100%;
+    margin: auto;
+    height: 650px;
+}
+}
+@media only screen and (min-width : 320px) and (max-width :400px){
+  .key:active {
+    background: none;
+    color: none;
   }
   div.circle1 {
     width: 250px;
@@ -217,10 +229,5 @@ body {
     background: #ffca88;
     margin-right: -100px;
     margin-top: -50px;
-  }
-}
-@media only screen and (width : 375px){
-  .body {
-    width: 375px;
   }
 }
